@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #063f5e;
+        }
+        .login-card{
+            width: 20rem;
+            height: 30rem;
+            position: absolute;
+            left: 50px; /* Temprary */
+            /* left: 33rem; */
+            top: 6rem;
+            background-color: #00b4d8;
+            border-top-right-radius: 10%;
+            box-shadow: 0px 0px 60px 30px rgba(0, 183, 255, 0.5);
+        }
+        .login-card::before{
+            content: "";
+            position: absolute;
+            left: 16.4rem;
+            top: -1.5rem;
+            width: 4rem;
+            height: 4.5rem;
+            background-color: transparent;
+            border-top-right-radius: 50%;
+            border-top: 17px solid #00b4d8;
+            border-right: 17px solid #00b4d8;
+        }
+        /* .login-card:hover{
+            background-color: #c50436;
+        } */
+        h1{
+            color: black;
+            margin-left: 20px;
+        }
+        .inputs{
+            ::placeholder{
+                color: black;
+            }
+        }
+    
+        input{
+            padding-left: 18px;
+            max-width: 150px;
+            position: relative;
+            left: 25%;
+            top: 30%;
+            margin-top: 50px;
+            border: none;
+            /* border-radius: 0px 10px 0px 10px; */
+            background-color: transparent;
+            border-bottom: 2px solid black; 
+            outline: none;
+        }
+        .fp a{
+            padding-top: 20px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <h1 class="written-itms">Login Card</h1>
+        <div class="inputs">
+            <!-- <p class="written-itms">Name</p> -->
+            <input type="text" placeholder="Enter User-name" maxlength="25">
+            <br>
+            <input type="text" placeholder="Enter Email" maxlength="25">
+            <br>
+            <input type="password" placeholder="Enter Password" maxlength="8">
+        </div>
+        <div class="fp">
+            <a href="">Forgot Password?</a>
+        </div>
+        
+    </div>
+</body>
+</html>
